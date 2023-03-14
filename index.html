@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              base: "#213740",
+              primary: "#E8F2D8",
+              secondary: "#A0AA93",
+              light: "#A0AA93",
+              lighter: "#E8F2D8",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="relative bg-base text-primary">
+
+    <!-- navbar -->
+    <nav class="fixed top-0 left-0 right-0 sm:h-[60px] flex flex-wrap shadow">
+        <div class="md:container mx-auto flex items-center justify-between"> 
+            <a href="" class="font-semibold text-lg">Ivan Karl</a>
+            <ul class="flex items-center gap-5 my-auto">
+                <li><a href="#" class="flex items-center w-auto rounded hover:bg-primary hover:text-base transition delay-50 duration-300 ease-in-out p-2">Home</a></li>
+                <li><a href="#" class="flex items-center w-auto rounded hover:bg-primary hover:text-base transition delay-50 duration-300 ease-in-out p-2">About Us</a></li>
+                <li><a href="#" class="flex items-center w-auto rounded hover:bg-primary hover:text-base transition delay-50 duration-300 ease-in-out p-2">Services</a></li>
+                <li><a href="#" class="flex items-center w-auto rounded hover:bg-primary hover:text-base transition delay-50 duration-300 ease-in-out p-2">Products</a></li>
+                <li><a href="#" class="flex items-center w-auto rounded hover:bg-primary hover:text-base transition delay-50 duration-300 ease-in-out p-2">Blog</a></li>
+                <li><a href="#" class="flex items-center w-auto rounded hover:bg-primary hover:text-base transition delay-50 duration-300 ease-in-out p-2">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="sm:mt-[70px] container mx-auto">
+        <button>ivankarl</button>
+    </main>
+
+  </body>
+</html>
