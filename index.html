@@ -7,6 +7,9 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         theme: {
@@ -17,32 +20,65 @@
               secondary: "#A0AA93",
               light: "#A0AA93",
               lighter: "#E8F2D8",
+              shade: "#28424d",
             },
+            fontFamily: {
+              'sans': ['Helvetica', 'Arial', 'sans-serif'],
+              'serif': ['ui-serif', 'Georgia'],
+              'mono': ['ui-monospace', 'SFMono-Regular'],
+              'display': ['Oswald'],
+              'body': ['"Open Sans"'],
+              'globos' : "'Golos Text', sans-serif"
+            }
           },
         },
       };
     </script>
   </head>
-  <body class="relative bg-base text-primary">
+  <body class="relative bg-base text-primary h-screen w-full">
 
     <!-- navbar -->
-    <nav class="fixed top-0 left-0 right-0 sm:h-[60px] flex flex-wrap shadow">
-        <div class="md:container mx-auto flex items-center justify-between"> 
-            <a href="" class="font-semibold text-lg">Ivan Karl</a>
-            <ul class="flex items-center gap-5 my-auto">
-                <li><a href="#" class="flex items-center w-auto rounded hover:bg-primary hover:text-base transition delay-50 duration-300 ease-in-out p-2">Home</a></li>
-                <li><a href="#" class="flex items-center w-auto rounded hover:bg-primary hover:text-base transition delay-50 duration-300 ease-in-out p-2">About Us</a></li>
-                <li><a href="#" class="flex items-center w-auto rounded hover:bg-primary hover:text-base transition delay-50 duration-300 ease-in-out p-2">Services</a></li>
-                <li><a href="#" class="flex items-center w-auto rounded hover:bg-primary hover:text-base transition delay-50 duration-300 ease-in-out p-2">Products</a></li>
-                <li><a href="#" class="flex items-center w-auto rounded hover:bg-primary hover:text-base transition delay-50 duration-300 ease-in-out p-2">Blog</a></li>
-                <li><a href="#" class="flex items-center w-auto rounded hover:bg-primary hover:text-base transition delay-50 duration-300 ease-in-out p-2">Contact Us</a></li>
+    <nav class="fixed top-0 left-0 right-0 h-[50px] w-full md:h-auto flex flex-wrap shadow bg-base">
+        <div class="container px-5 md:px-0 md:container w-full mx-auto flex items-center justify-between"> 
+            <a href="" class="font-semibold text-lg">IDC</a>
+            <button class="md:hidden p-1 rounded-xl hover:bg-shade">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                <path fill-rule="evenodd" d="M3 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 5.25zm0 4.5A.75.75 0 013.75 9h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 9.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75zm0 4.5a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <ul class="hidden md:flex items-center gap-5 my-[10px]">
+              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out p-2">Home</a></li>
+              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out p-2">About Us</a></li>
+              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out p-2">Services</a></li>
+              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out p-2">Products</a></li>
+              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out p-2">Blog</a></li>
+              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out p-2">Contact Us</a></li>
             </ul>
-        </div>
+          </div>
     </nav>
 
-    <main class="sm:mt-[70px] container mx-auto">
-        <button>ivankarl</button>
-    </main>
+    <div class="container mx-auto h-full">
+        <!-- top -->
+        <section class="h-full flex flex-col justify-center md:flex md:flex-row md:items-center md:justify-start">
+          <div class="px-[50px]">
+            <p class="text-[35px] flex justify-center md:justify-start text-primary font-globos font-base">Hello, I'm</p>
+            <div class="md:flex md:gap-3">
+              <p class="text-[40px] flex justify-center md:justify-start text-primary font-globos font-bold">IVAN KARL</p>
+              <p class="text-[40px] flex justify-center md:justify-start text-primary font-globos font-bold">DELA CRUZ</p>
+            </div>
+            <!-- <p class="text-[30px] flex justify-center md:justify-start text-primary font-globos font-semibold bg-primary">Programmer</p> -->
+            <!-- buttons -->
+            <div class="bg-red-500 flex justify-between">
+              <button class="">Resume</button>
+              <button class="">Projects</button>
+            </div>
+          </div>
+        </section>
+        <!-- about -->
+        <div class="h-full bg-blue-100">
+
+        </div>
+    </div>
 
   </body>
 </html>
