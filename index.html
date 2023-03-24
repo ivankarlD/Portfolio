@@ -10,16 +10,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              base: "#213740",
-              primary: "#E8F2D8",
+              dark: "#213740",
+              light: "#E8F2D8",
               secondary: "#A0AA93",
-              light: "#A0AA93",
-              lighter: "#E8F2D8",
+              darker: "#1a2c33",
+              highlights: "#A0AA93",
+              highlights: "#E8F2D8",
               shade: "#28424d",
             },
             fontFamily: {
@@ -35,10 +38,10 @@
       };
     </script>
   </head>
-  <body class="relative bg-base text-primary h-screen w-full">
+  <body class="relative bg-dark text-light h-screen w-full">
 
     <!-- navbar -->
-    <nav class="fixed top-0 left-0 right-0 h-[50px] w-full md:h-auto flex flex-wrap shadow bg-base">
+    <nav class="fixed top-0 left-0 right-0 h-[50px] w-full md:h-auto flex flex-wrap shadow bg-darker">
         <div class="container px-5 md:px-0 md:container w-full mx-auto flex items-center justify-between"> 
             <a href="" class="font-semibold text-lg">IDC</a>
             <button class="md:hidden p-1 rounded-xl hover:bg-shade">
@@ -47,36 +50,81 @@
               </svg>
             </button>
             <ul class="hidden md:flex items-center gap-5 my-[10px]">
-              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out p-2">Home</a></li>
-              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out p-2">About Us</a></li>
-              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out p-2">Services</a></li>
-              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out p-2">Products</a></li>
-              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out p-2">Blog</a></li>
-              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out p-2">Contact Us</a></li>
+              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out py-2 px-5">Home</a></li>
+              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out py-2 px-5">Skill</a></li>
+              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out py-2 px-5">Project</a></li>
+              <li><a href="#" class="flex items-center w-auto rounded hover:bg-shade transition delay-50 duration-300 ease-in-out py-2 px-5">Contact</a></li>
             </ul>
           </div>
     </nav>
 
-    <div class="container mx-auto h-full">
-        <!-- top -->
-        <section class="h-full flex flex-col justify-center md:flex md:flex-row md:items-center md:justify-start">
-          <div class="px-[50px]">
-            <p class="text-[35px] flex justify-center md:justify-start text-primary font-globos font-base">Hello, I'm</p>
-            <div class="md:flex md:gap-3">
-              <p class="text-[40px] flex justify-center md:justify-start text-primary font-globos font-bold">IVAN KARL</p>
-              <p class="text-[40px] flex justify-center md:justify-start text-primary font-globos font-bold">DELA CRUZ</p>
+    <div class="mx-auto h-full">
+
+        <section class="h-full bg-dark flex items-center justify-center md:justify-start">
+          <div class="container mx-auto">
+            <p class="text-[35px] flex justify-center md:justify-start text-light font-globos font-base">Hello, I'm</p>
+            <div class="md:flex md:gap-5">
+              <p class="text-[40px] flex justify-center md:justify-start text-light font-globos font-bold">IVAN KARL</p>
+              <p class="text-[40px] flex justify-center md:justify-start text-light font-globos font-bold">DELA CRUZ</p>
+              <p class="text-[30px] hidden md:flex justify-center items-center md:justify-start text-light font-globos font-base">a</p>
+              <p class="text-[30px] mt-[10px] md:mt-0 flex justify-center items-center md:justify-start text-light font-globos font-base"><span class="bg-light  text-dark rounded-xl px-4">Programmer</span></p>
             </div>
-            <!-- <p class="text-[30px] flex justify-center md:justify-start text-primary font-globos font-semibold bg-primary">Programmer</p> -->
             <!-- buttons -->
-            <div class="bg-red-500 flex justify-between">
-              <button class="">Resume</button>
-              <button class="">Projects</button>
+            <div class="md:flex md:gap-5 mt-5 md:mt-3">
+              <button class="block w-full mt-3 md:mt-0 md:w-auto border border-light py-2 px-5 md:text-[18px] rounded-xl md:hover:text-[18px] hover:bg-light hover:text-dark transition delay-50 duration-300 ease-in-out">Resume</button>
+              <button class="block w-full mt-3 md:mt-0 md:w-auto border border-light py-2 px-5 md:text-[18px] rounded-xl md:hover:text-[18px] hover:bg-light hover:text-dark transition delay-50 duration-300 ease-in-out">Projects</button>
             </div>
           </div>
         </section>
-        <!-- about -->
-        <div class="h-full bg-blue-100">
-
+        <div class="md:h-full bg-darker">
+          <div class="container mx-auto py-[50px] md:pt-[100px]">
+            <div class="flex flex-col items-center mb-[30px] md:mb-[50px]">
+              <p class="text-[35px] md:mt-0 font-globos font-semibold p-0">MY SKILLS</p>
+              <p class="text-[15px] md:mt-0 font-globos font-base p-0">Technical skills related to Information Technology</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 place-content-center lg:grid-cols-4 gap-4 px-[50px] md:px-0">
+              <div class="flex justify-center">
+                <div class="bg-dark w-[280px] md:max-w-[280px] md:w-[280px] p-5 flex flex-col gap-4">
+                  <!-- logo -->
+                  <div class="text-highlights flex justify-center">
+                    <svg class="h-[40px] w-[40px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" />
+                    </svg>                    
+                  </div>
+                  <!-- title-->
+                  <p class="text-lg font-globos font-semibold p-0 flex justify-center">WEB DEVELOPMENT</p>
+                  <!-- description -->
+                  <p class="text-sm font-globos font-base p-0 flex justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non facilis dolores</p>
+                  <div class="">
+                    <p class="text-sm font-globos font-base p-0 flex justify-start">Programming Languages</p>
+                    <div class="mt-3">
+                      <div class="flex gap-5 px-5">
+                        <i class="h-8 w-8 fab fa-html5"></i>
+                        <p class="text-[10px] font-globos font-base p-0">HTML</p>
+                      </div>
+                      <div class="h-8 w-8 flex gap-5 px-5">
+                        <i class="fab fa-css3-alt"></i>
+                        <p class="text-[10px] font-globos font-base p-0">CSS</p>
+                      </div>
+                      <div class="h-8 w-8 flex gap-5 px-5">
+                        <i class="fab fa-js"></i>
+                        <p class="text-[10px] font-globos font-base p-0">JavaScript</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-center">
+                <div class="bg-dark h-[280px] w-[280px] md:h-[280px] md:max-w-[280px] md:w-[280px]">01</div>
+              </div>
+              <div class="flex justify-center">
+                <div class="bg-dark h-[280px] w-[280px] md:h-[280px] md:max-w-[280px] md:w-[280px]">01</div>
+              </div>
+              <div class="flex justify-center">
+                <div class="bg-dark h-[280px] w-[280px] md:h-[280px] md:max-w-[280px] md:w-[280px]">01</div>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
 
