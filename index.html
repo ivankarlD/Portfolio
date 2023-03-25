@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
     <script>
       tailwind.config = {
         theme: {
@@ -84,12 +84,103 @@
               <p class="text-[15px] text-center md:mt-0 font-globos font-base px-5 md:px-0">Technical skills related to Information Technology</p>
             </div>
             <div class="flex flex-wrap justify-center gap-4 px-[50px] md:px-0">
-              <div class="rounded-lg shadow-lg bg-dark h-[400px] w-[280px]">
-                
+              <!-- web development -->
+              <div id="webContainer" class="grid rounded-lg shadow-lg bg-dark min-h-[400px] max-h-[400px] w-[280px] p-5">
+                <div id="webHeader" class="block mb-4">
+                  <h5 id="webIcon" class="mb-3 text-[40px] font-medium leading-tight">
+                    <i class="fa-solid fa-globe fa-base"></i>
+                  </h5>
+                  <p id="webTitle" class="text-lg font-semibold p-0">
+                    Web Development
+                  </p>
+                </div>
+                <div id="webBody" class="mb-4">
+                  <p id="webTitle" class="text-base font-base p-0">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore blanditiis sapiente magni expedita nam odio incidunt perferendis ab mollitia ipsam vel, dolores quisquam!
+                  </p>
+                </div>
+                <div id="webFooter" class="grid h-auto">
+                  <p id="" class="text-base font-semibold p-0">
+                    Programming Languages
+                  </p>
+                  <div class="grid grid-cols-2 gap-2 overflow-x-auto h-[65px]">
+                    <div class="flex items-center gap-2 bg-darker rounded-lg h-[27px]">
+                      <div class="flex items-center justify-center bg-light text-darker p-2 h-[25px] w-[25px] rounded-lg">
+                        <i class="fa-brands fa-html5 fa-lg p-0 m-0"></i>
+                      </div>
+                      <p id="" class="text-[12px] font-base p-0">
+                        HTML
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-2 bg-darker rounded-lg h-[27px]">
+                      <div class="flex items-center justify-center bg-light text-darker p-2 h-[25px] w-[25px] rounded-lg">
+                        <i class="fa-brands fa-css3-alt fa-lg"></i>
+                      </div>
+                      <p id="" class="text-[12px] font-base p-0">
+                        CSS
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-2 bg-darker rounded-lg h-[27px]">
+                      <div class="flex items-center justify-center bg-light text-darker p-2 h-[25px] w-[25px] rounded-lg">
+                        <i class="fa-brands fa-square-js fa-lg"></i>
+                      </div>
+                      <p id="" class="text-[12px] font-base p-0">
+                        JavaScript
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-2 bg-darker rounded-lg h-[27px]">
+                      <div class="flex items-center justify-center bg-light text-darker p-2 h-[25px] w-[25px] rounded-lg">
+                        <i class="fa-brands fa-php"></i>
+                      </div>
+                      <p id="" class="text-[12px] font-base p-0">
+                        PHP
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="rounded-lg shadow-lg bg-dark h-[400px] w-[280px]">01</div>
-              <div class="rounded-lg shadow-lg bg-dark h-[400px] w-[280px]">01</div>
-              <div class="rounded-lg shadow-lg bg-dark h-[400px] w-[280px]">01</div>
+               <!-- end web development -->
+               <!-- android development -->
+               <div id="webContainer" class="grid rounded-lg shadow-lg bg-dark min-h-[400px] max-h-[400px] w-[280px] p-5">
+                <div id="webHeader" class="block mb-4">
+                  <h5 id="webIcon" class="mb-3 text-[40px] font-medium leading-tight">
+                    <!-- <i class="fa-solid fa-globe fa-base"></i> -->
+                    <i class="fa-brands fa-android"></i>
+                  </h5>
+                  <p id="webTitle" class="text-lg font-semibold p-0">
+                    Android Development
+                  </p>
+                </div>
+                <div id="webBody" class="mb-4">
+                  <p id="webTitle" class="text-base font-base p-0">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore blanditiis sapiente magni expedita nam odio incidunt perferendis ab mollitia ipsam vel, dolores quisquam!
+                  </p>
+                </div>
+                <div id="webFooter" class="grid h-auto">
+                  <p id="" class="text-base font-semibold p-0">
+                    Programming Languages
+                  </p>
+                  <div class="grid grid-cols-2 gap-2 overflow-x-auto h-[65px]">
+                    <div class="flex items-center gap-2 bg-darker rounded-lg h-[27px]">
+                      <div class="flex items-center justify-center bg-light text-darker p-2 h-[25px] w-[25px] rounded-lg">
+                        <i class="fab fa-java fa-lg"></i>
+                      </div>
+                      <p id="" class="text-[12px] font-base p-0">
+                        Java
+                      </p>
+                    </div>
+                    <div class="flex items-center gap-2 bg-darker rounded-lg h-[27px]">
+                      <div class="flex items-center justify-center bg-light text-darker font-bold p-2 h-[25px] w-[25px] rounded-lg">
+                        <!-- <i class="fa-brands fa-css3-alt fa-lg"></i> -->
+                        C#
+                      </div>
+                      <p id="" class="text-[12px] font-base p-0">
+                        C Sharp
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
